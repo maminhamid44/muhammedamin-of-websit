@@ -1,0 +1,56 @@
+
+
+About · HTML
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Muhammed Amin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo"><span class="logo-mark">MA</span><span class="logo-text">Muhammed <span class="accent-text">Amin</span></span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle"><span id="theme-icon">🌙</span> <span id="theme-label">Dark</span></button>
+        <a href="contact.html" class="btn btn-primary nav-cta">Let's Work Together</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 4rem;">
+    <section class="about section">
+      <div class="container">
+        <div class="section-header reveal active">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h1 class="section-title">About <span class="gradient-text">Muhammed Amin</span></h1>
+        </div>
+        <div class="about-content glass-card reveal active">
+          <div class="editable-badge"><i class="fa-solid fa-pen-to-square"></i> Editable Biography Placeholder</div>
+          <p>Replace this placeholder with your real biography, academic background, and passion for Computer Science, Artificial Intelligence, and building digital solutions.</p>
+          <div class="about-actions">
+            <a href="index.html#about" class="btn btn-primary">View Full Profile &amp; Timeline</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

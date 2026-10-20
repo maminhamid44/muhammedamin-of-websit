@@ -1,0 +1,167 @@
+
+Responsive · CSS
+/* ==========================================================================
+   MUHAMMED AMIN PORTFOLIO - RESPONSIVE STYLESHEET (css/responsive.css)
+   Tested for: 1440px+, 1024px, 768px, 375px, 320px
+   ========================================================================== */
+
+/* Laptop Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+
+  .about-grid,
+  .dual-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile Navigation (max-width: 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.35s ease-in-out;
+  }
+
+  .nav-menu.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-mobile-cta {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-tech-strip {
+    justify-content: center;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile Phones (max-width: 480px - covers 375px & 320px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .profile-frame {
+    width: 270px;
+    height: 270px;
+  }
+
+  .profile-card-inner {
+    width: 215px;
+    height: 215px;
+  }
+
+  .floating-chip {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .about-highlights,
+  .stats-grid,
+  .skill-badges-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  #theme-label {
+    display: none;
+  }
+
+  .about-content,
+  .skill-category,
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.4rem;
+  }
+}

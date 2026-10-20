@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammedamin & AI & Computer Science Portfolio</title>
+  <meta name="description" content="Official portfolio of Muhammed Amin — exploring Artificial Intelligence, Computer Science, software development, and digital innovation." />
+  <meta name="author" content="Muhammed Amin" />
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammedamin & AI & Computer Science Portfolio" />
+  <meta property="og:description" content="Official portfolio of Muhammed Amin — exploring Artificial Intelligence, Computer Science, software development, and digital innovation." />
+  <meta property="og:image" content="assets/images/og-preview.png" />
+
+  <!-- Inline SVG Favicon (MA Logo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23060913'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='26'%3EMA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Background Neural Particle Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Muhammedamin Home">
+        <span class="logo-mark">MA</span>
+        <span class="logo-text">Muhammed <span class="accent-text">amin</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-mobile-cta">
+          <a href="#contact" class="btn btn-primary btn-full">Let's Work Together</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark or Light Mode" title="Switch Theme">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+          <span class="theme-label" id="theme-label">Dark</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Work Together</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="container hero-grid">
+        <!-- Left Column: Hero Content -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>AI • Computer Science • Technology • Digital Innovation</span>
+          </div>
+
+          <p class="hero-greeting">Hi, I'm <strong>Muhammedamin</strong></p>
+
+          <h1 class="hero-title">
+            Building the Future with <span class="gradient-text">AI &amp; Technology</span>
+          </h1>
+
+          <p class="hero-description">
+            Computer Science and AI enthusiast passionate about building useful digital solutions, learning emerging technologies, and turning ideas into practical projects.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-tech-strip">
+            <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="tech-pill"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            <span class="tech-pill"><i class="fa-solid fa-code"></i> Web Dev</span>
+            <span class="tech-pill"><i class="fa-solid fa-microchip"></i> AI Systems</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual / Profile Placeholder -->
+        <div class="hero-visual reveal">
+          <div class="profile-frame">
+            <!-- Floating AI / Code Symbols -->
+            <div class="floating-chip chip-1" aria-hidden="true">
+              <i class="fa-solid fa-terminal"></i> <code>&lt;AI /&gt;</code>
+            </div>
+            <div class="floating-chip chip-2" aria-hidden="true">
+              <i class="fa-solid fa-network-wired"></i> <span>Neural Net</span>
+            </div>
+            <div class="floating-chip chip-3" aria-hidden="true">
+              <i class="fa-solid fa-database"></i> <span>Data Science</span>
+            </div>
+
+            <!-- Decorative Orbit Rings -->
+            <div class="orbit-ring orbit-1"></div>
+            <div class="orbit-ring orbit-2"></div>
+
+            <!-- Profile Card Container -->
+            <div class="profile-card-inner">
+              <!-- OPTION 1: Real Profile Image (Uncomment & set src when photo is ready) -->
+              <!--
+              <img src="assets/images/profile.jpg" alt="Muhammedamin - AI and Computer Science Portfolio" class="profile-img" />
+              -->
+
+              <!-- OPTION 2: Stylish Tech & AI Placeholder Avatar -->
+              <div class="profile-placeholder" id="profile-placeholder">
+                <svg class="placeholder-svg" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Muhammedamin Initials and AI Network Graphic">
+                  <defs>
+                    <linearGradient id="maGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#3b82f6" />
+                      <stop offset="50%" stop-color="#8b5cf6" />
+                      <stop offset="100%" stop-color="#06b6d4" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Subtle AI network grid lines -->
+                  <circle cx="130" cy="130" r="105" fill="none" stroke="url(#maGrad)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.5" />
+                  <circle cx="130" cy="130" r="82" fill="none" stroke="url(#maGrad)" stroke-width="1" opacity="0.3" />
+                  <line x1="45" y1="75" x2="95" y2="110" stroke="#3b82f6" stroke-width="1" opacity="0.4" />
+                  <line x1="215" y1="75" x2="165" y2="110" stroke="#8b5cf6" stroke-width="1" opacity="0.4" />
+                  <line x1="60" y1="190" x2="105" y2="155" stroke="#06b6d4" stroke-width="1" opacity="0.4" />
+                  <line x1="200" y1="190" x2="155" y2="155" stroke="#3b82f6" stroke-width="1" opacity="0.4" />
+                  <circle cx="45" cy="75" r="4" fill="#3b82f6" />
+                  <circle cx="215" cy="75" r="4" fill="#8b5cf6" />
+                  <circle cx="60" cy="190" r="4" fill="#06b6d4" />
+                  <circle cx="200" cy="190" r="4" fill="#3b82f6" />
+                  <!-- Center Hexagon & MA Monogram -->
+                  <polygon points="130,52 195,90 195,170 130,208 65,170 65,90" fill="rgba(15, 23, 42, 0.85)" stroke="url(#maGrad)" stroke-width="2.5" />
+                  <text x="130" y="142" text-anchor="middle" fill="#ffffff" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="44" letter-spacing="2">MA</text>
+                </svg>
+                <div class="profile-placeholder-caption">
+                  <span class="mono-tag">[Editable Profile Photo Area]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">Exploring the intersection of Computer Science, Artificial Intelligence, and practical software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Editable Bio & Highlights -->
+          <div class="about-content glass-card reveal">
+            <div class="editable-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Editable Biography Placeholder
+            </div>
+            <h3>Modern Technology Learner &amp; Digital Builder</h3>
+            <p>
+              <!-- EDIT BIOGRAPHY HERE -->
+              Hello! I am <strong>Muhammedamin</strong>. This biography section is an editable placeholder ready for your personal story. You can replace this paragraph with your background, what inspired your interest in Computer Science and Artificial Intelligence, and the goals driving your technical journey.
+            </p>
+            <p>
+              My focus areas revolve around understanding foundational algorithms, experimenting with machine learning workflows, and crafting clean, responsive web applications that solve real-world problems.
+            </p>
+
+            <!-- Core Focus Highlights -->
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Computer Science</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-brain"></i>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-robot"></i>
+                <span>Machine Learning</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-globe"></i>
+                <span>Web Development</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Digital Innovation</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <!-- Replace href with your real CV file path e.g. assets/Muhammed-Amin-CV.pdf -->
+              <a href="#contact" class="btn btn-primary" download>
+                <i class="fa-solid fa-download"></i>
+                <span>Download CV</span>
+              </a>
+              <a href="#projects" class="btn btn-outline">Explore Work</a>
+            </div>
+          </div>
+
+          <!-- Right: Editable Statistics Grid -->
+          <div class="stats-grid reveal">
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-folder-open"></i></div>
+              <span class="stat-number">[03+]</span>
+              <span class="stat-label">Projects</span>
+              <small class="stat-note">Editable Placeholder</small>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <span class="stat-number">[15+]</span>
+              <span class="stat-label">Technologies</span>
+              <small class="stat-note">Editable Placeholder</small>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <span class="stat-number">[00+]</span>
+              <span class="stat-label">Certificates</span>
+              <small class="stat-note">Editable Placeholder</small>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <span class="stat-number">[02+]</span>
+              <span class="stat-label">Years Learning</span>
+              <small class="stat-note">Editable Placeholder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Technical Toolkit</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">Core programming languages, AI/ML libraries, web technologies, and development tools. (Indicators are easily editable in HTML).</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming -->
+          <div class="skill-category glass-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-terminal"></i></div>
+              <div>
+                <h3>Programming</h3>
+                <span class="skill-cat-tag">Core Languages</span>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Python</span><span class="mono-tag">Core Focus</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>JavaScript</span><span class="mono-tag">Active</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>C++</span><span class="mono-tag">Foundations</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="75%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>HTML</span><span class="mono-tag">Core Focus</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>CSS</span><span class="mono-tag">Core Focus</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: AI & Machine Learning -->
+          <div class="skill-category glass-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3>AI &amp; Machine Learning</h3>
+                <span class="skill-cat-tag">Data &amp; Intelligence</span>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Machine Learning</span><span class="mono-tag">Exploring</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>NLP</span><span class="mono-tag">Projects</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="75%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Data Analysis</span><span class="mono-tag">Core Focus</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="82%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Scikit-learn</span><span class="mono-tag">Library</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="78%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Pandas &amp; NumPy</span><span class="mono-tag">Data Stack</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="84%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Development -->
+          <div class="skill-category glass-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Web Development</h3>
+                <span class="skill-cat-tag">Frontend &amp; Interfaces</span>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>HTML5</span><span class="mono-tag">Semantic</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>CSS3</span><span class="mono-tag">Modern Layouts</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>JavaScript</span><span class="mono-tag">ES6+</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="82%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>Responsive Design</span><span class="mono-tag">Mobile-First</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info"><span>UI/UX</span><span class="mono-tag">Clean Design</span></div>
+                <div class="progress-track"><div class="progress-fill" data-width="80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools -->
+          <div class="skill-category glass-card reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3>Tools &amp; Workflow</h3>
+                <span class="skill-cat-tag">Development Environment</span>
+              </div>
+            </div>
+            <div class="skill-badges-wrap">
+              <div class="tool-badge">
+                <i class="fa-brands fa-git-alt"></i>
+                <div>
+                  <strong>Git</strong>
+                  <span>Version Control</span>
+                </div>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>Code Hosting &amp; Collab</span>
+                </div>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-file-code"></i>
+                <div>
+                  <strong>VS Code</strong>
+                  <span>Primary IDE</span>
+                </div>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-book-open"></i>
+                <div>
+                  <strong>Jupyter Notebook</strong>
+                  <span>AI/ML &amp; Data Lab</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">Sample projects demonstrating AI/ML, Python, and Web Development. Replace links and descriptions with your live repositories.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters reveal" role="tablist" aria-label="Filter Projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card reveal" data-category="ai-ml python">
+            <div class="project-img-wrapper">
+              <div class="project-visual visual-ai">
+                <i class="fa-solid fa-comments-dollar"></i>
+                <span>NLP • Sentiment Model</span>
+              </div>
+              <span class="project-badge">Editable Sample</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Feedback Sentiment Analysis</h3>
+              <p class="project-desc">
+                An NLP and machine learning pipeline designed to analyze and classify student course feedback into positive, neutral, and constructive sentiment categories.
+              </p>
+              <div class="project-tags">
+                <span>NLP</span>
+                <span>Machine Learning</span>
+                <span>Python</span>
+                <span>Scikit-learn</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for Student Feedback Sentiment Analysis">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for Student Feedback Sentiment Analysis">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card reveal" data-category="web other">
+            <div class="project-img-wrapper">
+              <div class="project-visual visual-web">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Web Platform • UI</span>
+              </div>
+              <span class="project-badge">Editable Sample</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">College Management System</h3>
+              <p class="project-desc">
+                A responsive web interface for organizing academic schedules, student directories, course announcements, and department resources with clean navigation.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for College Management System">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for College Management System">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card reveal" data-category="ai-ml python other">
+            <div class="project-img-wrapper">
+              <div class="project-visual visual-data">
+                <i class="fa-solid fa-chart-network"></i>
+                <span>Data Science • Notebooks</span>
+              </div>
+              <span class="project-badge">Editable Sample</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI/ML Learning Projects</h3>
+              <p class="project-desc">
+                A curated collection of practical machine learning experiments, exploratory data analysis notebooks, and predictive modeling exercises built in Python.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Analysis</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for AI/ML Learning Projects">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for AI/ML Learning Projects">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Capabilities</span>
+          <h2 class="section-title">What I <span class="gradient-text">Can Do</span></h2>
+          <p class="section-desc">Combining modern web standards, Python programming, and AI concepts to build clean digital products.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Modern responsive websites and web interfaces built for speed, accessibility, and cross-device compatibility.</p>
+          </div>
+
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Machine learning experiments, data analysis, and AI applications using modern Python libraries and workflows.</p>
+          </div>
+
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Clean and user-friendly digital interfaces with thoughtful typography, visual hierarchy, and intuitive navigation.</p>
+          </div>
+
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+            <h3>Python Development</h3>
+            <p>Automation, data processing, and Python applications structured for maintainability and practical problem solving.</p>
+          </div>
+
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Digital Solutions</h3>
+            <p>Technology-based solutions for education and organizations looking to streamline workflows and modernize operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== JOURNEY & EDUCATION SECTION ==================== -->
+    <section class="journey-education section" id="journey">
+      <div class="container">
+        <div class="dual-grid">
+          <!-- Column 1: My Journey Timeline -->
+          <div class="journey-col reveal">
+            <div class="section-header left-align">
+              <span class="section-subtitle">Timeline</span>
+              <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+              <p class="section-desc">Editable milestone placeholders — customize with your real milestones.</p>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item glass-card">
+                <span class="timeline-dot"></span>
+                <div class="timeline-meta">
+                  <span class="timeline-year">2026</span>
+                  <span class="editable-tag">Editable Placeholder</span>
+                </div>
+                <h3>AI &amp; Computer Science Projects</h3>
+                <p>Developing practical machine learning models, natural language processing experiments, and building modern portfolio applications.</p>
+              </div>
+
+              <div class="timeline-item glass-card">
+                <span class="timeline-dot"></span>
+                <div class="timeline-meta">
+                  <span class="timeline-year">2025</span>
+                  <span class="editable-tag">Editable Placeholder</span>
+                </div>
+                <h3>Programming &amp; Web Development</h3>
+                <p>Expanding proficiency in Python, JavaScript, responsive frontend architecture, and interactive web user interfaces.</p>
+              </div>
+
+              <div class="timeline-item glass-card">
+                <span class="timeline-dot"></span>
+                <div class="timeline-meta">
+                  <span class="timeline-year">2024</span>
+                  <span class="editable-tag">Editable Placeholder</span>
+                </div>
+                <h3>Computer Science Learning</h3>
+                <p>Focusing on core programming logic, data structures, C++ and Python fundamentals, and version control with Git.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education & Certifications -->
+          <div class="education-col reveal" id="education">
+            <div class="section-header left-align">
+              <span class="section-subtitle">Academic Background</span>
+              <h2 class="section-title">Education &amp; <span class="gradient-text">Credentials</span></h2>
+              <p class="section-desc">Structured placeholder fields ready for your verified academic details.</p>
+            </div>
+
+            <div class="edu-card glass-card">
+              <div class="editable-badge">
+                <i class="fa-solid fa-graduation-cap"></i> Editable Education Details
+              </div>
+
+              <div class="edu-field-list">
+                <div class="edu-field">
+                  <span class="edu-label">Institution</span>
+                  <span class="edu-value">[Your University / College Name Here]</span>
+                </div>
+                <div class="edu-field">
+                  <span class="edu-label">Degree / Program</span>
+                  <span class="edu-value">[e.g., Bachelor of Science / Diploma Program]</span>
+                </div>
+                <div class="edu-field">
+                  <span class="edu-label">Field of Study</span>
+                  <span class="edu-value">Computer Science &amp; Artificial Intelligence</span>
+                </div>
+                <div class="edu-field">
+                  <span class="edu-label">Year</span>
+                  <span class="edu-value">[Start Year – Present / Expected Graduation]</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-card glass-card mt-4">
+              <div class="editable-badge">
+                <i class="fa-solid fa-certificate"></i> Editable Certifications
+              </div>
+              <ul class="cert-list">
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>[Certification Title #1 — e.g., AI / Machine Learning Course]</strong>
+                    <span>[Issuing Organization • Year]</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>[Certification Title #2 — e.g., Python or Web Development]</strong>
+                    <span>[Issuing Organization • Year]</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Great Together</span></h2>
+          <p class="section-desc">Available for collaboration, technology projects, and learning opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Info & Social Placeholders -->
+          <div class="contact-info glass-card reveal">
+            <div class="availability-banner">
+              <span class="status-dot"></span>
+              <span>Available for collaboration, technology projects, and learning opportunities.</span>
+            </div>
+
+            <h3>Connect with Muhammedamin</h3>
+            <p>
+              Have a project idea, research collaboration, or question? Send a message using the form or reach out through any of the channels below.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span>Email (Editable Placeholder)</span>
+                  <a href="mailto:maminhamid44@gmail.com">[maminhamid44@gmail.com]</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span>Location (Editable Placeholder)</span>
+                  <strong>[finnfine, ethiopia]</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-section">
+              <span class="social-heading">Social Profiles (Replace `#` with your URLs)</span>
+              <div class="social-links">
+                <a href="#" class="social-btn" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn" aria-label="Telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="social-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="mailto:maminhamid44@gmail.com" class="social-btn" aria-label="Email" title="Email"><i class="fa-regular fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrapper glass-card reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration, etc." required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <span class="logo-mark">MA</span>
+            <span class="logo-text">Muhammed <span class="accent-text">amin</span></span>
+          </a>
+          <p class="footer-tagline">AI • Computer Science • Technology • Digital Innovation</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="mailto:maminhamid44@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muhammedamin. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
